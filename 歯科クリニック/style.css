@@ -1,0 +1,296 @@
+/* Theme Name : さわやか歯科クリニック */
+
+body {
+    font-family: Zen Maru Gothic, serif;
+    padding-top: 60px;
+}
+h1 {
+    font-size: 1.5rem;
+    font-weight: normal;
+    color: #27859F;
+    text-shadow: 4px 4px 4px #adadad;
+}
+h2 {
+    font-size: 1.25rem;
+    font-weight: normal;
+}
+.button {
+    color: white;
+    background-color: #27859F;
+    margin: 0px 40% 20px 0px;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 4px 4px 4px #adadad;
+}
+.button a:hover {
+    color: #27859F;
+}
+.button:hover {
+    background-color: #EBF3F5;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+.button a {
+    color: white;
+}
+.logo {
+    width: 150px;
+    margin-top: 10px;
+}
+header {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    background-color: white;
+    top: 0
+}
+#nav-pc ul {
+    display: flex;
+}
+#nav-pc li {
+    margin: auto 15px;
+}
+#menu-sp, #nav-sp {
+    display: none;
+}
+.header a:hover {
+    text-decoration: underline;
+}
+.mv {
+  width: 100%;
+}
+.concept {
+    background-color: #EBF3F5 ;
+    padding: 40px;
+}
+.policy {
+    padding: 40px;
+}
+.policy-box {
+    display: flex;
+}
+.policy-title {
+    background-color: #EBF3F5;
+    border-radius: 20px;
+}
+.policy-text {
+    margin: auto 20px;
+}
+.features {
+    background-color: #EBF3F5;
+    padding: 40px;
+}
+.features-title {
+    background-color: white;
+    margin: auto 30%;
+    border-radius: 20px;
+    padding: 1px;
+}
+.staff {
+    padding: 40px;
+}
+.staff-img img {
+    width: 300px;
+    border-radius: 50%;
+}
+.medical {
+    background-color: #EBF3F5;
+    padding: 40px;
+}
+.medical-box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.medical-title {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 4px 4px 4px #adadad;
+    padding: 1px;
+    margin: 20px 50px;
+}
+.medical-img img {
+    width: 200px;
+    border-radius: 50%;
+    margin: 0px 20px 20px 20px;
+}
+.access {
+    padding: 40px;
+}
+.time {
+    background-color: #EBF3F5;
+    padding: 40px;
+}
+.time-img {
+    width: 600px;
+}
+.contact {
+    padding: 40px;
+}
+.blog {
+    background-color: #EBF3F5;
+    padding: 40px;
+}
+.footer {
+    margin-top: 50px;
+    font-size: 0.8rem;
+    line-height: 2;
+}
+li {
+    text-decoration: none;
+    list-style: none;
+}
+li:hover {
+    text-decoration: underline;
+}
+
+/* staff */
+.staff-title {
+  background-color: #EBF3F5;
+  margin: 0;
+  padding: 40px;
+}
+.matsumoto, .tanaka, .suzuki {
+  display: flex;
+  padding: 40px;
+}
+.matsumoto, .suzuki {
+  background-color: #EBF3F5;
+}
+.staff-img {
+  margin: 20px 60px;
+}
+.staff-text {
+  padding-top: 40px;
+}
+
+/* medical */
+.medical-maintitle {
+  background-color: #EBF3F5;
+  margin: 0;
+  padding: 40px;
+}
+.medical1, .medical2, .medical3, .medical4 {
+  display: flex;
+  padding: 40px;
+}
+.medical1, .medical3 {
+  background-color: #EBF3F5;
+}
+.medical-img {
+  margin: 20px 60px;
+}
+.medical-title1 {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 4px 4px 4px #adadad;
+    padding: 5px;
+    margin: auto 
+}
+.medical-title2 {
+    background-color: #EBF3F5;
+    border-radius: 20px;
+    box-shadow: 4px 4px 4px #adadad;
+    padding: 5px;
+    margin: auto
+}
+
+
+@media screen and (max-width: 959px) {
+	/* 959px以下に適用されるCSS（タブレット用） */
+    .policy-box {
+    display: block;
+}
+    #nav-pc {
+    display: none;
+}
+ /* ハンバーガーメニュー */
+   #menu-sp {
+     display: block;
+     background-color: transparent;
+     float: right;
+     padding: 0;
+     border: none;
+   }
+ 
+   /* スマホ用ナビゲーションの表示切替*/
+   /* 初期状態、レイアウトと非表示設定 */
+   #nav-sp {
+     background-color: white;
+     position: fixed;
+     left: 0;
+     top: 0;
+     height: 100%;
+     width: 100%;
+     display: none;
+     z-index: 100;
+   }
+
+      /* ×ボタン */
+   #close {
+     position: absolute;
+     top: 20px;
+     right: 20px;
+     background-color: transparent;
+     border: none;
+   }
+ 
+   #nav-sp nav ul {
+     padding-left: 0;
+   }
+ 
+   #nav-sp nav li {
+     list-style: none;
+   }
+ 
+   /* ナビゲーションメニュー用ロゴ */
+   #logo-sp {
+     margin: 80px 0 30px 20px;
+   } 
+
+    #nav-sp nav a {
+    display: block;
+  }
+ 
+  #nav-sp nav a:hover {
+     text-decoration: underline;
+   }
+ 
+   #nav-sp .menu {
+     text-decoration: none;
+     margin: 0 20px 0 20px;
+     height: 44px;
+     font-size: 16px;
+   }
+   
+   .menu-icon {
+    width: 50px;
+   }
+   .close-icon {
+    width: 50px;
+   }
+ /* staff */
+ .matsumoto, .tanaka, .suzuki {
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px;
+}
+.staff-img {
+  margin: auto;
+}
+
+/* medical */
+.medical1, .medical2, .medical3, .medical4 {
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px;
+}
+.medical-img {
+  text-align: center;
+}
+}
